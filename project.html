@@ -125,7 +125,8 @@
                     <papertitle>Fast Surface Defect Detection Using Gabor Filters</papertitle>
                     <br>
                     <strong>Jiaxu Ma</strong>, Yuxi Wang, Chen Shi,
-                    <a href="http://mvig.sjtu.edu.cn/">Cewu Lu</a><br>
+                    <a href="http://mvig.sjtu.edu.cn/">Cewu Lu</a>
+                    <br>
                     <!--<em>ICIP</em>, 2018 <br>-->
                     <br>
                     <p>We propose a Gabor filter-based method to detect curvilinear defects accurately on rough
@@ -162,10 +163,42 @@
                     Ruiheng Chang,
                     <strong>Jiaxu Ma</strong>,
                     <a href="http://mvig.sjtu.edu.cn/">Cewu Lu</a>,
-                    <a href="http://www.cs.ust.hk/~cktang">Chi-Keung Tang</a><br>
+                    <a href="http://www.cs.ust.hk/~cktang">Chi-Keung Tang</a>
+                    <br>
+                    <br>
                     <!--<em>arXiv Preprint</em>, 2018 <br>-->
                     <p>We synthesize images of homogeneous object cluster as training data for instance
                         segmentation. </p>
+                </td>
+            </tr>
+
+            <tr onmouseout="edge_stop()" onmouseover="edge_start()">
+                <td width="20%">
+                    <div class="one">
+                        <div class="two" id='edge_image'><img src='./img/peppers_after.png'></div>
+                        <img src='./img/peppers_before.png'>
+                    </div>
+                    <script type="text/javascript">
+                        function edge_start() {
+                            document.getElementById('edge_image').style.opacity = "1";
+                        }
+
+                        function edge_stop() {
+                            document.getElementById('edge_image').style.opacity = "0";
+                        }
+
+                        aperture_stop()
+                    </script>
+                </td>
+                <td valign="top" width="80%">
+                    <papertitle>A cpp version of pdollar's <a href="https://github.com/pdollar/edges">Structured Edge
+                        Detection Toolbox</a>.
+                    </papertitle>
+                    <br>
+                    <strong>Jiaxu Ma</strong>
+                    <br>
+                    <br>
+                    [<a href="https://github.com/AlexMa011/edgeBoxes-Cpp-version">c++ code</a>]
                 </td>
             </tr>
 
