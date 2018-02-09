@@ -7,6 +7,7 @@
     <title>Alex Ma</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/text.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,39 +19,56 @@
 <body>
 <div class="wrapper">
     <header>
-        <h1>马家旭</h1>
-        <h3>Alex Ma</h3>
+        <a href="index-cn.html"><h1>马家旭</h1></a>
+        <h3>Jiaxu Ma</h3>
         <p>
             <small><a href="index.html">EN</a>/中文</small>
         </p>
-        <p class="view"><a href="project-cn.html"><strong>项目经历</strong><br></a></p>
+        <p class="view"><a href="index-cn.html">首页<br></a></p>
+        <p class="view"><a href="research-cn.html">科研经历<br></a></p>
+        <p class="view"><a href="project-cn.html">项目经历<br></a></p>
         <p class="view"><a href="https://alexma011.github.io/myblog.github.io/">博客<br></a></p>
         <p class="view"><a href="cv.pdf">简历<br></a></p>
     </header>
+
     <section>
-        <p>
-            I'm now a master student in sjtu. My major is computer science and my interests mainly focus on computer
-            vision with deep learning skills.
-        </p>
 
-        <p>
-            I work and learn in SJTU Machine Vision and Intelligence Group (<a href="http://mvig.sjtu.edu.cn">MVIG</a>),
-            supervised by Prof. Cewu Lu.
-        </p>
+        <h2>开源项目</h2>
+        <hr>
 
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-        <p>Contact information:</p>
+            <tr onmouseout="edge_stop()" onmouseover="edge_start()">
+                <td width="20%">
+                    <div class="one">
+                        <div class="two" id='edge_image'><img src='./img/peppers_after.png'></div>
+                        <img src='./img/peppers_before.png'>
+                    </div>
+                    <script type="text/javascript">
+                        function edge_start() {
+                            document.getElementById('edge_image').style.opacity = "1";
+                        }
 
-        <ul>
-            <li><p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:alexma@sjtu.edu.cn">alexma@sjtu.edu.cn</a>
-            </p>
-            </li>
-            <li><p><i class="fa fa-qq" aria-hidden="true"></i> <a
-                    href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=346912792">346912792</a></p>
-            </li>
-            <li><p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+86 17602163115"> +86 17602163115</a></p>
-            </li>
-        </ul>
+                        function edge_stop() {
+                            document.getElementById('edge_image').style.opacity = "0";
+                        }
+
+                        aperture_stop()
+                    </script>
+                </td>
+                <td valign="top" width="80%">
+                    <papertitle>A c++ implementation of pdollar's <a href="https://github.com/pdollar/edges">Structured
+                        Edge
+                        Detection Toolbox</a>.
+                    </papertitle>
+                    <br>
+                    <br>
+                    [<a href="https://github.com/AlexMa011/edgeBoxes-Cpp-version">c++ code</a>]
+                </td>
+            </tr>
+
+        </table>
+
 
     </section>
 

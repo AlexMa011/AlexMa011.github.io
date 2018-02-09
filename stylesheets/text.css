@@ -1,0 +1,25 @@
+.one {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.two {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+    background-color: #ffffd0;
+}

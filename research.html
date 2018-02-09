@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Alex Ma</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/text.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <a href="index.html"><h1>Jiaxu Ma</h1></a>
+        <h3>马家旭</h3>
+        <p>
+            <small> EN/<a href="index-cn.html">中文</a></small>
+        </p>
+        <p class="view"><a href="index.html">Home<br>
+        </a></p>
+
+        <p class="view"><a href="research.html">Research<br></a></p>
+
+
+        <p class="view"><a href="project.html">Project<br></a></p>
+
+
+        <p class="view"><a href="https://alexma011.github.io/myblog.github.io/">Blog<br></a></p>
+
+        <p class="view"><a href="cv.pdf">CV<br></a></p>
+    </header>
+
+    <section>
+
+        <h2>Research</h2>
+        <hr>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tr onmouseout="defect_stop()" onmouseover="defect_start()">
+                <td width="20%">
+                    <div class="one">
+                        <div class="two" id='defect_image'><img src='./img/defect_after.png'></div>
+                        <img src='./img/defect_before.png'>
+                    </div>
+                    <script type="text/javascript">
+                        function defect_start() {
+                            document.getElementById('defect_image').style.opacity = "1";
+                        }
+
+                        function defect_stop() {
+                            document.getElementById('defect_image').style.opacity = "0";
+                        }
+
+                        aperture_stop()
+                    </script>
+                </td>
+                <td valign="top" width="80%">
+                    <papertitle>Fast Surface Defect Detection Using Gabor Filters</papertitle>
+                    <br>
+                    <strong>Jiaxu Ma</strong>, Yuxi Wang, Chen Shi,
+                    <a href="http://mvig.sjtu.edu.cn/">Cewu Lu</a>
+                    <br>
+                    <!--<em>ICIP</em>, 2018 <br>-->
+                    <br>
+                    <p>We propose a Gabor filter-based method to detect curvilinear defects accurately on rough
+                        surfaces.</p>
+                </td>
+            </tr>
+
+            <tr onmouseout="seg_stop()" onmouseover="seg_start()">
+                <td width="20%">
+                    <div class="one">
+                        <div class="two" id='seg_image'><img src='./img/seg_after.jpg'></div>
+                        <img src='./img/seg_before.jpg'>
+                    </div>
+                    <script type="text/javascript">
+                        function seg_start() {
+                            document.getElementById('seg_image').style.opacity = "1";
+                        }
+
+                        function seg_stop() {
+                            document.getElementById('seg_image').style.opacity = "0";
+                        }
+
+                        aperture_stop()
+                    </script>
+                </td>
+                <td valign="top" width="80%">
+                    <a href="https://arxiv.org/abs/1802.00383">
+                        <papertitle>Annotation-Free and One-Shot Learning for Instance Segmentation of
+                            Homogeneous Object Clusters
+                        </papertitle>
+                    </a>
+                    <br>
+                    <a href="http://mvig.sjtu.edu.cn/">Zheng Wu</a>,
+                    Ruiheng Chang,
+                    <strong>Jiaxu Ma</strong>,
+                    <a href="http://mvig.sjtu.edu.cn/">Cewu Lu</a>,
+                    <a href="http://www.cs.ust.hk/~cktang">Chi-Keung Tang</a>
+                    <br>
+                    <br>
+                    <!--<em>arXiv Preprint</em>, 2018 <br>-->
+                    <p>We synthesize images of homogeneous object cluster as training data for instance
+                        segmentation. </p>
+                </td>
+            </tr>
+
+        </table>
+
+
+    </section>
+
+    <footer>
+        <p>
+            <small>Hosted on GitHub Pages <br>Theme by <a href=
+                                                                  "https://github.com/orderedlist">orderedlist</a>
+            </small>
+        </p>
+
+
+    </footer>
+</div>
+<script src="javascripts/scale.fix.js">
+</script>
+</body>
+
+</html>
