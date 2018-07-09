@@ -127,6 +127,37 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+            <tr onmouseout="poly_stop()" onmouseover="poly_start()">
+                <td width="20%">
+                    <div class="one">
+                        <div class="two" id='poly_image'><img src='./img/poly_after.jpg'></div>
+                        <img src='./img/poly_before.jpg'>
+                    </div>
+                    <script type="text/javascript">
+                        function poly_start() {
+                            document.getElementById('poly_image').style.opacity = "1";
+                        }
+
+                        function poly_stop() {
+                            document.getElementById('poly_image').style.opacity = "0";
+                        }
+
+                        aperture_stop()
+                    </script>
+                </td>
+                <td valign="top" width="80%">
+                    <papertitle>A pytorch implementation of cvpr 2017 <a href="http://www.cs.toronto.edu/polyrnn/poly_cvpr17">Polygon-RNN</a>.
+                    </papertitle>
+                    <br>
+                    <br>
+                    [<a href="https://github.com/AlexMa011/pytorch-polygon-rnn">pytorch</a>]
+                </td>
+            </tr>
+
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
             <tr onmouseout="edge_stop()" onmouseover="edge_start()">
                 <td width="20%">
                     <div class="one">
