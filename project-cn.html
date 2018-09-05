@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script type="text/javascript" src="javascripts/animation.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -38,23 +39,12 @@
         <hr>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr onmouseout="defect_stop()" onmouseover="defect_start()">
+            <tr onmouseout="show_img('defect_image','./img/defect_before.png')"
+                onmouseover="show_img('defect_image','./img/defect_after.png')">
                 <td width="20%">
                     <div class="one">
-                        <div class="two" id='defect_image'><img src='./img/defect_after.png'></div>
-                        <img src='./img/defect_before.png'>
+                        <img src="./img/defect_before.png" id="defect_image">
                     </div>
-                    <script type="text/javascript">
-                        function defect_start() {
-                            document.getElementById('defect_image').style.opacity = "1";
-                        }
-
-                        function defect_stop() {
-                            document.getElementById('defect_image').style.opacity = "0";
-                        }
-
-                        aperture_stop()
-                    </script>
                 </td>
                 <td valign="top" width="80%">
                     <papertitle>Fast Surface Defect Detection Using Gabor Filters</papertitle>
@@ -69,23 +59,12 @@
                 </td>
             </tr>
 
-            <tr onmouseout="seg_stop()" onmouseover="seg_start()">
+            <tr onmouseout="show_img('seg_image','./img/seg_before.jpg')"
+                onmouseover="show_img('seg_image','./img/seg_after.jpg')">
                 <td width="20%">
                     <div class="one">
-                        <div class="two" id='seg_image'><img src='./img/seg_after.jpg'></div>
-                        <img src='./img/seg_before.jpg'>
+                        <img src="./img/seg_before.jpg" id="seg_image">
                     </div>
-                    <script type="text/javascript">
-                        function seg_start() {
-                            document.getElementById('seg_image').style.opacity = "1";
-                        }
-
-                        function seg_stop() {
-                            document.getElementById('seg_image').style.opacity = "0";
-                        }
-
-                        aperture_stop()
-                    </script>
                 </td>
                 <td valign="top" width="80%">
                     <a href="https://arxiv.org/abs/1802.00383">
@@ -122,23 +101,12 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-            <tr onmouseout="poly_stop()" onmouseover="poly_start()">
+            <tr onmouseout="show_img('poly_image','./img/poly_before.jpg')"
+                onmouseover="show_img('poly_image','./img/poly_after.jpg')">
                 <td width="20%">
                     <div class="one">
-                        <div class="two" id='poly_image'><img src='./img/poly_after.jpg'></div>
-                        <img src='./img/poly_before.jpg'>
+                        <img src="./img/poly_before.jpg" id="poly_image">
                     </div>
-                    <script type="text/javascript">
-                        function poly_start() {
-                            document.getElementById('poly_image').style.opacity = "1";
-                        }
-
-                        function poly_stop() {
-                            document.getElementById('poly_image').style.opacity = "0";
-                        }
-
-                        aperture_stop()
-                    </script>
                 </td>
                 <td valign="top" width="80%">
                     <papertitle>A pytorch implementation of cvpr 2017 <a href="http://www.cs.toronto.edu/polyrnn/poly_cvpr17">Polygon-RNN</a>.
@@ -153,23 +121,12 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-            <tr onmouseout="edge_stop()" onmouseover="edge_start()">
+            <tr onmouseout="show_img('edge_image','./img/peppers_before.png')"
+                onmouseover="show_img('edge_image','./img/peppers_after.png')">
                 <td width="20%">
                     <div class="one">
-                        <div class="two" id='edge_image'><img src='./img/peppers_after.png'></div>
-                        <img src='./img/peppers_before.png'>
+                        <img src="./img/peppers_before.png" id="edge_image">
                     </div>
-                    <script type="text/javascript">
-                        function edge_start() {
-                            document.getElementById('edge_image').style.opacity = "1";
-                        }
-
-                        function edge_stop() {
-                            document.getElementById('edge_image').style.opacity = "0";
-                        }
-
-                        aperture_stop()
-                    </script>
                 </td>
                 <td valign="top" width="80%">
                     <papertitle>A c++ implementation of pdollar's <a href="https://github.com/pdollar/edges">Structured
